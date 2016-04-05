@@ -1,10 +1,7 @@
 //
 //  ClearStyleTests.swift
-//  ClearStyleTests
 //
-//  Created by Audrey M Tam on 4/08/2014.
-//  Copyright (c) 2014 Ray Wenderlich. All rights reserved.
-//
+
 
 import UIKit
 import XCTest

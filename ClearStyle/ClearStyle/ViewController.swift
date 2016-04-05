@@ -1,10 +1,7 @@
 //
 //  ViewController.swift
-//  ClearStyle
 //
-//  Created by Audrey M Tam on 4/08/2014.
-//  Copyright (c) 2014 Ray Wenderlich. All rights reserved.
-//
+
 
 import UIKit
 
@@ -41,7 +38,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         toDoItems.append(ToDoItem(text: "get a hair cut"))
     }
     
-    // MARK: - Table view data source
+    //Table view data source
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -60,7 +57,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
     }
 
-//Table view delegate
+    //Table view delegate
+    
+    func colorForIndex(index: Int) -> UIColor {
+        let itemCount = toDoItems.count - 1
+        let val = (CGFloat(index) / CGFloat(itemCount)) * 0.6
+        return UIColor(red: 1.0, green: val, blue: 0.0, alpha: 1.0)
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell,
+                   forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = colorForIndex(indexPath.row)
+    }
 
 }
 

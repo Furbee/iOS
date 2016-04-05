@@ -1,10 +1,7 @@
 //
 //  ToDoItem.swift
-//  ClearStyle
-//
-//  Created by Audrey M Tam on 27/07/2014.
-//  Copyright (c) 2014 Ray Wenderlich. All rights reserved.
-//
+//  
+
 
 import UIKit
 
